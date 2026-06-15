@@ -2,10 +2,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![tests](https://img.shields.io/badge/tests-1763%20passing-brightgreen)
-
-<!-- After pushing to GitHub, swap in the live CI badge (replace USER/REPO):
-[![tests](https://github.com/USER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/USER/REPO/actions/workflows/ci.yml) -->
+[![tests](https://github.com/lukeyin08/options-pricing-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/lukeyin08/options-pricing-visualizer/actions/workflows/ci.yml)
 
 A from-scratch Black-Scholes engine in Python: pricing, analytical Greeks, a Monte Carlo pricer with variance reduction, and a Greek visualizer across strike and time to expiry. The normal distribution, the pricing formulas, and the Greeks are written from scratch; scipy appears only in the tests, as a reference. 1763 tests pass: every Greek against finite differences, Monte Carlo against Black-Scholes inside its confidence interval.
 
