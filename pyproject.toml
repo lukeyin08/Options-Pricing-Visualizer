@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "options-viz"
+version = "0.1.0"
+description = "From-scratch Black-Scholes pricing, Greeks, and Monte Carlo with a Greek visualizer."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Adam" }]
+dependencies = [
+    "numpy>=2.0",
+    "matplotlib>=3.8",
+    "plotly>=5.20",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "scipy>=1.11"]
+app = ["streamlit>=1.30"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+# Lets `pytest` find the package without an editable install.
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
