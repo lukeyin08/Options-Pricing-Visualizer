@@ -9,7 +9,7 @@ description = "From-scratch Black-Scholes pricing, Greeks, and Monte Carlo with 
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Adam" }]
+authors = [{ name = "Luke Yin" }]
 dependencies = [
     "numpy>=2.0",
     "matplotlib>=3.8",
